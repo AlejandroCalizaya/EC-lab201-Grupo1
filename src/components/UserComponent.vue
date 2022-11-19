@@ -6,17 +6,7 @@ export default {
 </script>
 
 <template>
-  <div class="followers">
-    <h1>Followers:</h1>
-  </div>
+  <h2>{{ displayName }}</h2>
+  <img :src="img" />
+  <h2>Followers: {{ followers.total }}</h2>
 </template>
-
-<style>
-@media (min-width: 1024px) {
-  .followers {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
