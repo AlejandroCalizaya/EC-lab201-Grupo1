@@ -21,7 +21,7 @@ export default {
 router.beforeEach((to, from, next) => {
   const userStore = useUserStore();
   if (to.name === "logout" && userStore.isAuthenticated()) {
-    //TODO: Implementar.
+    next({ name: "login" });
   }
   if (to.name === "loginCallback" && Object.keys(to.query).length) {
     const code = to.query.code;

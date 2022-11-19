@@ -17,6 +17,7 @@ export default {
   async created() {
     const userData = await spotifyAPI.getUser();
     //TODO: implementar esto. llenar los datos del usuario
+    
   },
 };
 </script>
