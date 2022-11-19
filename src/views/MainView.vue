@@ -14,10 +14,20 @@ export default {
       const tracks = await spotifyAPI.getPlaylist(playlistId);
       this.currentTracks = tracks.tracks.items;
     },
-    toMinutesAndSeconds(millis) {
-      /* TODO: implementar esta funcion */
-      return "";
+    valuetime = valor => {
+      if (valor < 10) {
+        return "0" + valor;
+      } else {
+        return "" + valor;
+      }
     },
+    toMinutesAndSeconds = (millis) => {
+      const minutos = parseInt(millis / 1000 /60);
+      millis -= minutos * 60 * 1000;
+      const segundos = (millis / 1000);
+    
+      return valuetime(min): valuetime(segundostoFixed(1));
+    }
   },
   data() {
     return {
