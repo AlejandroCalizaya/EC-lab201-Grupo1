@@ -6,5 +6,17 @@ export default {
 </script>
 
 <template>
-  {{ /*TODO: rellenar la pagina con los datos del usuario */}}
+  <div class="followers">
+    <h1>Followers:</h1>
+  </div>
 </template>
+
+<style>
+@media (min-width: 1024px) {
+  .followers {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+</style>
